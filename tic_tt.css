@@ -1,0 +1,73 @@
+.head{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 50px;
+    color: white;
+}
+.head1{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    padding: 30px;
+}
+.row1{
+    display: grid;
+    grid-template-columns: repeat(3, 90px); /* 3 columns */
+    gap: 15px;
+    justify-content: center; /* center the whole grid */
+    margin-top: 40px;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.box {
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    border: none;
+    color: brown;
+    font-size: 40px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.3);
+}
+body{
+    background-color: darkcyan;
+}
+.reset{
+    width: 100px;
+    height: 60px;
+    background-color: black;
+    color: white;
+    margin: 40px auto;
+    border-radius: 30px;
+    margin-top: 40px;
+    display: block;
+}
+.newgame{
+    width: 100px;
+    height: 60px;
+    background-color: black;
+    color: white;
+    margin:40px auto;
+    border-radius: 30px;
+    margin-top: 40px;
+    display: none;
+    margin-bottom: 40px;
+}
+.box{
+    transition: 0.25s;
+}
+
+.winBox{
+    background: #00ff99 ;
+    color: black ;
+    box-shadow: 0 0 25px rgba(0,255,153,0.9);
+    animation: pop 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes pop {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.15); }
+}

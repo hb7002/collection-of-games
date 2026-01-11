@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Games Menu</title>
+  <style>
+    body{
+        background-color:#759b9e ;
+    }
+    h1{
+        text-align: center;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .container{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 50px;
+      margin-top: 100px;
+    }
+
+    .container img{
+      background-color: white;
+      width: 250px;
+      height: 250px;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: 0.3s;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    .container img:hover{
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+    <h1>Which game do you want to play?</h1>
+  <div class="container">
+
+    
+    <a href="tic-tac-toe.html">
+      <img src="tic.png" alt="Tic Tac Toe">
+    </a>
+
+    
+    <a href="stone_paper.html">
+      <img src="stone paper scissor.jpg" alt="Stone Paper Scissor">
+    </a>
+
+  </div>
+
+</body>
+</html>
